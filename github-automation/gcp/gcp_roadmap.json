@@ -1,0 +1,623 @@
+{
+  "phases": [
+    {
+      "key": "GCP-01",
+      "title": "GCP-01 \u2014 GCP Fundamentals, Projects & IAM",
+      "objective": "Build and troubleshoot the gcp fundamentals, projects & iam workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-01.1",
+          "title": "GCP-01.1 \u2014 Organization, folders, projects and resource hierarchy",
+          "objective": "Implement and validate organization, folders, projects and resource hierarchy in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.2",
+          "title": "GCP-01.2 \u2014 Billing budgets, alerts and quota checks",
+          "objective": "Implement and validate billing budgets, alerts and quota checks in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.3",
+          "title": "GCP-01.3 \u2014 gcloud CLI installation and authentication",
+          "objective": "Implement and validate gcloud cli installation and authentication in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.4",
+          "title": "GCP-01.4 \u2014 IAM principals, roles and policy inheritance",
+          "objective": "Implement and validate iam principals, roles and policy inheritance in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.5",
+          "title": "GCP-01.5 \u2014 Service accounts and least-privilege access",
+          "objective": "Implement and validate service accounts and least-privilege access in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.6",
+          "title": "GCP-01.6 \u2014 Workload Identity Federation and keyless CI authentication",
+          "objective": "Implement and validate workload identity federation and keyless ci authentication in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.7",
+          "title": "GCP-01.7 \u2014 Enable APIs and inspect audit logs",
+          "objective": "Implement and validate enable apis and inspect audit logs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-01.8",
+          "title": "GCP-01.8 \u2014 IAM permission-denied troubleshooting",
+          "objective": "Implement and validate iam permission-denied troubleshooting in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-02",
+      "title": "GCP-02 \u2014 VPC & Networking",
+      "objective": "Build and troubleshoot the vpc & networking workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-02.1",
+          "title": "GCP-02.1 \u2014 VPC architecture and subnet design",
+          "objective": "Implement and validate vpc architecture and subnet design in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.2",
+          "title": "GCP-02.2 \u2014 Regional subnets and IP address planning",
+          "objective": "Implement and validate regional subnets and ip address planning in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.3",
+          "title": "GCP-02.3 \u2014 Firewall rules and connectivity tests",
+          "objective": "Implement and validate firewall rules and connectivity tests in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.4",
+          "title": "GCP-02.4 \u2014 Cloud NAT and outbound connectivity",
+          "objective": "Implement and validate cloud nat and outbound connectivity in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.5",
+          "title": "GCP-02.5 \u2014 Cloud Router and routing inspection",
+          "objective": "Implement and validate cloud router and routing inspection in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.6",
+          "title": "GCP-02.6 \u2014 Private Google Access and service access patterns",
+          "objective": "Implement and validate private google access and service access patterns in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.7",
+          "title": "GCP-02.7 \u2014 DNS fundamentals with Cloud DNS",
+          "objective": "Implement and validate dns fundamentals with cloud dns in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.8",
+          "title": "GCP-02.8 \u2014 Network Connectivity Center and VPC peering concepts",
+          "objective": "Implement and validate network connectivity center and vpc peering concepts in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-02.9",
+          "title": "GCP-02.9 \u2014 Networking outage simulation and runbook",
+          "objective": "Implement and validate networking outage simulation and runbook in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-03",
+      "title": "GCP-03 \u2014 Terraform Foundations & Remote State",
+      "objective": "Build and troubleshoot the terraform foundations & remote state workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-03.1",
+          "title": "GCP-03.1 \u2014 Terraform provider and version constraints",
+          "objective": "Implement and validate terraform provider and version constraints in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.2",
+          "title": "GCP-03.2 \u2014 GCS remote backend and state locking",
+          "objective": "Implement and validate gcs remote backend and state locking in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.3",
+          "title": "GCP-03.3 \u2014 Bootstrap state bucket with security controls",
+          "objective": "Implement and validate bootstrap state bucket with security controls in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.4",
+          "title": "GCP-03.4 \u2014 Reusable networking and IAM modules",
+          "objective": "Implement and validate reusable networking and iam modules in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.5",
+          "title": "GCP-03.5 \u2014 Dev environment variables and naming conventions",
+          "objective": "Implement and validate dev environment variables and naming conventions in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.6",
+          "title": "GCP-03.6 \u2014 Terraform fmt validate and plan review",
+          "objective": "Implement and validate terraform fmt validate and plan review in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.7",
+          "title": "GCP-03.7 \u2014 Import existing resources and detect drift",
+          "objective": "Implement and validate import existing resources and detect drift in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.8",
+          "title": "GCP-03.8 \u2014 State security and sensitive outputs",
+          "objective": "Implement and validate state security and sensitive outputs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-03.9",
+          "title": "GCP-03.9 \u2014 CI validation and plan artifact handling",
+          "objective": "Implement and validate ci validation and plan artifact handling in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-04",
+      "title": "GCP-04 \u2014 GKE Cluster & Node Pools",
+      "objective": "Build and troubleshoot the gke cluster & node pools workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-04.1",
+          "title": "GCP-04.1 \u2014 GKE Standard versus Autopilot tradeoffs",
+          "objective": "Implement and validate gke standard versus autopilot tradeoffs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.2",
+          "title": "GCP-04.2 \u2014 Private versus public cluster design",
+          "objective": "Implement and validate private versus public cluster design in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.3",
+          "title": "GCP-04.3 \u2014 Provision a budget-aware GKE cluster with Terraform",
+          "objective": "Implement and validate provision a budget-aware gke cluster with terraform in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.4",
+          "title": "GCP-04.4 \u2014 Node pool configuration and machine sizing",
+          "objective": "Implement and validate node pool configuration and machine sizing in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.5",
+          "title": "GCP-04.5 \u2014 Workload Identity Federation for GKE",
+          "objective": "Implement and validate workload identity federation for gke in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.6",
+          "title": "GCP-04.6 \u2014 Kubernetes RBAC and cluster access",
+          "objective": "Implement and validate kubernetes rbac and cluster access in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.7",
+          "title": "GCP-04.7 \u2014 GKE networking and IP aliasing",
+          "objective": "Implement and validate gke networking and ip aliasing in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.8",
+          "title": "GCP-04.8 \u2014 Node pool health and upgrade settings",
+          "objective": "Implement and validate node pool health and upgrade settings in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-04.9",
+          "title": "GCP-04.9 \u2014 GKE troubleshooting and teardown",
+          "objective": "Implement and validate gke troubleshooting and teardown in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-05",
+      "title": "GCP-05 \u2014 Kubernetes Application Deployment",
+      "objective": "Build and troubleshoot the kubernetes application deployment workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-05.1",
+          "title": "GCP-05.1 \u2014 Build a small demo application container",
+          "objective": "Implement and validate build a small demo application container in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.2",
+          "title": "GCP-05.2 \u2014 Push images to Artifact Registry",
+          "objective": "Implement and validate push images to artifact registry in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.3",
+          "title": "GCP-05.3 \u2014 Deploy namespaces and application manifests",
+          "objective": "Implement and validate deploy namespaces and application manifests in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.4",
+          "title": "GCP-05.4 \u2014 Configure ConfigMaps and Secrets safely",
+          "objective": "Implement and validate configure configmaps and secrets safely in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.5",
+          "title": "GCP-05.5 \u2014 Configure readiness liveness and startup probes",
+          "objective": "Implement and validate configure readiness liveness and startup probes in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.6",
+          "title": "GCP-05.6 \u2014 Expose services and verify connectivity",
+          "objective": "Implement and validate expose services and verify connectivity in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.7",
+          "title": "GCP-05.7 \u2014 Resource requests limits and scheduling",
+          "objective": "Implement and validate resource requests limits and scheduling in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.8",
+          "title": "GCP-05.8 \u2014 Rollouts rollbacks and failure analysis",
+          "objective": "Implement and validate rollouts rollbacks and failure analysis in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-05.9",
+          "title": "GCP-05.9 \u2014 Document application deployment",
+          "objective": "Implement and validate document application deployment in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-06",
+      "title": "GCP-06 \u2014 Persistent Storage & CSI",
+      "objective": "Build and troubleshoot the persistent storage & csi workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-06.1",
+          "title": "GCP-06.1 \u2014 GKE Persistent Disk CSI architecture",
+          "objective": "Implement and validate gke persistent disk csi architecture in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.2",
+          "title": "GCP-06.2 \u2014 CSI driver availability and permissions",
+          "objective": "Implement and validate csi driver availability and permissions in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.3",
+          "title": "GCP-06.3 \u2014 StorageClass configuration and binding modes",
+          "objective": "Implement and validate storageclass configuration and binding modes in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.4",
+          "title": "GCP-06.4 \u2014 PVC and PV lifecycle",
+          "objective": "Implement and validate pvc and pv lifecycle in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.5",
+          "title": "GCP-06.5 \u2014 Mount a persistent volume in a Pod",
+          "objective": "Implement and validate mount a persistent volume in a pod in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.6",
+          "title": "GCP-06.6 \u2014 StatefulSet and data persistence exercise",
+          "objective": "Implement and validate statefulset and data persistence exercise in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.7",
+          "title": "GCP-06.7 \u2014 Volume expansion and reclaim policies",
+          "objective": "Implement and validate volume expansion and reclaim policies in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-06.8",
+          "title": "GCP-06.8 \u2014 Troubleshoot Pending PVC and mount errors",
+          "objective": "Implement and validate troubleshoot pending pvc and mount errors in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-07",
+      "title": "GCP-07 \u2014 Ingress, Load Balancing, DNS & HTTPS",
+      "objective": "Build and troubleshoot the ingress, load balancing, dns & https workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-07.1",
+          "title": "GCP-07.1 \u2014 Compare GKE Ingress and Gateway API",
+          "objective": "Implement and validate compare gke ingress and gateway api in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.2",
+          "title": "GCP-07.2 \u2014 Configure Google Cloud load balancing for a demo",
+          "objective": "Implement and validate configure google cloud load balancing for a demo in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.3",
+          "title": "GCP-07.3 \u2014 Configure health checks and backend readiness",
+          "objective": "Implement and validate configure health checks and backend readiness in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.4",
+          "title": "GCP-07.4 \u2014 Plan DNS subdomain under christelconsult.com",
+          "objective": "Implement and validate plan dns subdomain under christelconsult.com in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.5",
+          "title": "GCP-07.5 \u2014 Configure Cloud DNS or registrar DNS records",
+          "objective": "Implement and validate configure cloud dns or registrar dns records in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.6",
+          "title": "GCP-07.6 \u2014 Provision and validate managed TLS certificates",
+          "objective": "Implement and validate provision and validate managed tls certificates in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.7",
+          "title": "GCP-07.7 \u2014 Troubleshoot 404 502 503 and TLS failures",
+          "objective": "Implement and validate troubleshoot 404 502 503 and tls failures in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.8",
+          "title": "GCP-07.8 \u2014 Review external exposure and cost controls",
+          "objective": "Implement and validate review external exposure and cost controls in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-07.9",
+          "title": "GCP-07.9 \u2014 Document ingress request flow and teardown",
+          "objective": "Implement and validate document ingress request flow and teardown in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-08",
+      "title": "GCP-08 \u2014 Helm & Argo CD GitOps",
+      "objective": "Build and troubleshoot the helm & argo cd gitops workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-08.1",
+          "title": "GCP-08.1 \u2014 Create and validate a Helm chart",
+          "objective": "Implement and validate create and validate a helm chart in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.2",
+          "title": "GCP-08.2 \u2014 Template values for dev and test",
+          "objective": "Implement and validate template values for dev and test in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.3",
+          "title": "GCP-08.3 \u2014 Install Argo CD with safe local access",
+          "objective": "Implement and validate install argo cd with safe local access in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.4",
+          "title": "GCP-08.4 \u2014 Configure Git repository access",
+          "objective": "Implement and validate configure git repository access in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.5",
+          "title": "GCP-08.5 \u2014 Create an Argo CD Application",
+          "objective": "Implement and validate create an argo cd application in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.6",
+          "title": "GCP-08.6 \u2014 Sync Helm-managed application changes",
+          "objective": "Implement and validate sync helm-managed application changes in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.7",
+          "title": "GCP-08.7 \u2014 Investigate OutOfSync and unhealthy resources",
+          "objective": "Implement and validate investigate outofsync and unhealthy resources in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.8",
+          "title": "GCP-08.8 \u2014 Practice GitOps rollback and drift recovery",
+          "objective": "Implement and validate practice gitops rollback and drift recovery in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-08.9",
+          "title": "GCP-08.9 \u2014 Document GitOps operating procedures",
+          "objective": "Implement and validate document gitops operating procedures in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-09",
+      "title": "GCP-09 \u2014 GitHub Actions, Containers & Artifact Registry",
+      "objective": "Build and troubleshoot the github actions, containers & artifact registry workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-09.1",
+          "title": "GCP-09.1 \u2014 Create lint test and build workflow",
+          "objective": "Implement and validate create lint test and build workflow in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.2",
+          "title": "GCP-09.2 \u2014 Configure GitHub OIDC to Google Workload Identity Federation",
+          "objective": "Implement and validate configure github oidc to google workload identity federation in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.3",
+          "title": "GCP-09.3 \u2014 Set least-privilege service account permissions",
+          "objective": "Implement and validate set least-privilege service account permissions in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.4",
+          "title": "GCP-09.4 \u2014 Build and tag container images",
+          "objective": "Implement and validate build and tag container images in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.5",
+          "title": "GCP-09.5 \u2014 Push to Artifact Registry",
+          "objective": "Implement and validate push to artifact registry in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.6",
+          "title": "GCP-09.6 \u2014 Add vulnerability scanning and image provenance checks",
+          "objective": "Implement and validate add vulnerability scanning and image provenance checks in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.7",
+          "title": "GCP-09.7 \u2014 Deploy to GKE through controlled pipeline",
+          "objective": "Implement and validate deploy to gke through controlled pipeline in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.8",
+          "title": "GCP-09.8 \u2014 Configure environments and approvals",
+          "objective": "Implement and validate configure environments and approvals in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-09.9",
+          "title": "GCP-09.9 \u2014 Troubleshoot pipeline authentication and deploy failures",
+          "objective": "Implement and validate troubleshoot pipeline authentication and deploy failures in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-10",
+      "title": "GCP-10 \u2014 Monitoring, Logging & Alerting",
+      "objective": "Build and troubleshoot the monitoring, logging & alerting workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-10.1",
+          "title": "GCP-10.1 \u2014 Enable GKE and Cloud Monitoring telemetry",
+          "objective": "Implement and validate enable gke and cloud monitoring telemetry in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.2",
+          "title": "GCP-10.2 \u2014 Explore Cloud Logging for cluster workloads",
+          "objective": "Implement and validate explore cloud logging for cluster workloads in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.3",
+          "title": "GCP-10.3 \u2014 Create dashboards for nodes Pods and services",
+          "objective": "Implement and validate create dashboards for nodes pods and services in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.4",
+          "title": "GCP-10.4 \u2014 Define SLI SLO and error budget examples",
+          "objective": "Implement and validate define sli slo and error budget examples in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.5",
+          "title": "GCP-10.5 \u2014 Configure alert policies and notification channels",
+          "objective": "Implement and validate configure alert policies and notification channels in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.6",
+          "title": "GCP-10.6 \u2014 Inspect application metrics and logs",
+          "objective": "Implement and validate inspect application metrics and logs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.7",
+          "title": "GCP-10.7 \u2014 Practice log-based troubleshooting",
+          "objective": "Implement and validate practice log-based troubleshooting in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.8",
+          "title": "GCP-10.8 \u2014 Test alert routing without unnecessary costs",
+          "objective": "Implement and validate test alert routing without unnecessary costs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-10.9",
+          "title": "GCP-10.9 \u2014 Document observability runbook",
+          "objective": "Implement and validate document observability runbook in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-11",
+      "title": "GCP-11 \u2014 Security, Reliability & Troubleshooting",
+      "objective": "Build and troubleshoot the security, reliability & troubleshooting workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-11.1",
+          "title": "GCP-11.1 \u2014 Harden IAM and service accounts",
+          "objective": "Implement and validate harden iam and service accounts in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.2",
+          "title": "GCP-11.2 \u2014 Configure Kubernetes RBAC and namespaces",
+          "objective": "Implement and validate configure kubernetes rbac and namespaces in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.3",
+          "title": "GCP-11.3 \u2014 Use NetworkPolicy where supported",
+          "objective": "Implement and validate use networkpolicy where supported in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.4",
+          "title": "GCP-11.4 \u2014 Manage Secrets and encryption options",
+          "objective": "Implement and validate manage secrets and encryption options in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.5",
+          "title": "GCP-11.5 \u2014 Review image scanning and supply chain security",
+          "objective": "Implement and validate review image scanning and supply chain security in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.6",
+          "title": "GCP-11.6 \u2014 Configure PodDisruptionBudgets and topology spreading",
+          "objective": "Implement and validate configure poddisruptionbudgets and topology spreading in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.7",
+          "title": "GCP-11.7 \u2014 Practice node failure and recovery",
+          "objective": "Implement and validate practice node failure and recovery in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.8",
+          "title": "GCP-11.8 \u2014 Troubleshoot GKE authorization and connectivity",
+          "objective": "Implement and validate troubleshoot gke authorization and connectivity in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.9",
+          "title": "GCP-11.9 \u2014 Simulate incident and write postmortem",
+          "objective": "Implement and validate simulate incident and write postmortem in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-11.10",
+          "title": "GCP-11.10 \u2014 Review audit logs and security findings",
+          "objective": "Implement and validate review audit logs and security findings in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    },
+    {
+      "key": "GCP-12",
+      "title": "GCP-12 \u2014 End-to-End Validation, Documentation & Teardown",
+      "objective": "Build and troubleshoot the end-to-end validation, documentation & teardown workstream of a reproducible, cost-conscious Google Cloud platform. Compare with equivalent AWS implementation where useful.",
+      "tasks": [
+        {
+          "key": "GCP-12.1",
+          "title": "GCP-12.1 \u2014 Review infrastructure plan and expected costs",
+          "objective": "Implement and validate review infrastructure plan and expected costs in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.2",
+          "title": "GCP-12.2 \u2014 Provision temporary environment after budget review",
+          "objective": "Implement and validate provision temporary environment after budget review in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.3",
+          "title": "GCP-12.3 \u2014 Validate CI image build and deployment",
+          "objective": "Implement and validate validate ci image build and deployment in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.4",
+          "title": "GCP-12.4 \u2014 Verify HTTPS DNS and application behavior",
+          "objective": "Implement and validate verify https dns and application behavior in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.5",
+          "title": "GCP-12.5 \u2014 Validate persistence and recovery exercise",
+          "objective": "Implement and validate validate persistence and recovery exercise in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.6",
+          "title": "GCP-12.6 \u2014 Verify dashboards alerts and security checks",
+          "objective": "Implement and validate verify dashboards alerts and security checks in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.7",
+          "title": "GCP-12.7 \u2014 Capture sanitized architecture diagrams and evidence",
+          "objective": "Implement and validate capture sanitized architecture diagrams and evidence in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.8",
+          "title": "GCP-12.8 \u2014 Write portfolio README and operational runbooks",
+          "objective": "Implement and validate write portfolio readme and operational runbooks in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        },
+        {
+          "key": "GCP-12.9",
+          "title": "GCP-12.9 \u2014 Destroy cloud resources and confirm billing cleanup",
+          "objective": "Implement and validate destroy cloud resources and confirm billing cleanup in a temporary GCP lab; capture configuration, verification commands, failure scenarios, fixes, and sanitized documentation."
+        }
+      ]
+    }
+  ]
+}

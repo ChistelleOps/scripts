@@ -1,0 +1,474 @@
+{
+  "phases": [
+    {
+      "key": "K8S-06",
+      "title": "K8S-06 \u2014 Networking & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in networking & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-06.1",
+          "title": "K8S-06.1 \u2014 Services and EndpointSlices",
+          "objective": "Deploy ClusterIP Services; inspect selectors, ports and EndpointSlices; diagnose missing backends."
+        },
+        {
+          "key": "K8S-06.2",
+          "title": "K8S-06.2 \u2014 Pod-to-Pod Connectivity",
+          "objective": "Verify cross-node Pod traffic; inspect CNI configuration; isolate connectivity failures."
+        },
+        {
+          "key": "K8S-06.3",
+          "title": "K8S-06.3 \u2014 CoreDNS and Service Discovery",
+          "objective": "Test DNS resolution; inspect CoreDNS logs and configuration; fix a broken lookup."
+        },
+        {
+          "key": "K8S-06.4",
+          "title": "K8S-06.4 \u2014 Ingress Routing and HTTP Errors",
+          "objective": "Deploy an ingress controller if feasible; diagnose 404, 502 and 503 responses."
+        },
+        {
+          "key": "K8S-06.5",
+          "title": "K8S-06.5 \u2014 NetworkPolicies and Traffic Isolation",
+          "objective": "Verify CNI policy support; implement ingress/egress restrictions; diagnose blocked traffic."
+        },
+        {
+          "key": "K8S-06.6",
+          "title": "K8S-06.6 \u2014 Service Types and External Access",
+          "objective": "Compare ClusterIP, NodePort and LoadBalancer behavior; test local exposure safely."
+        },
+        {
+          "key": "K8S-06.7",
+          "title": "K8S-06.7 \u2014 Network Troubleshooting Toolkit",
+          "objective": "Use kubectl exec, ephemeral debug containers where supported, curl, dig and logs."
+        },
+        {
+          "key": "K8S-06.8",
+          "title": "K8S-06.8 \u2014 Networking Incident Simulation",
+          "objective": "Introduce a selector, DNS or routing fault; investigate, restore service and write a runbook."
+        }
+      ]
+    },
+    {
+      "key": "K8S-07",
+      "title": "K8S-07 \u2014 Storage & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in storage & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-07.1",
+          "title": "K8S-07.1 \u2014 PV, PVC and StorageClass Fundamentals",
+          "objective": "Inspect storage resources, binding modes and reclaim policies."
+        },
+        {
+          "key": "K8S-07.2",
+          "title": "K8S-07.2 \u2014 Local Dynamic Provisioning",
+          "objective": "Configure an appropriate local provisioner in kind and verify PVC binding."
+        },
+        {
+          "key": "K8S-07.3",
+          "title": "K8S-07.3 \u2014 PVC Pending Troubleshooting",
+          "objective": "Create an unbound claim; investigate capacity, class and provisioner events."
+        },
+        {
+          "key": "K8S-07.4",
+          "title": "K8S-07.4 \u2014 Volume Mount Failures",
+          "objective": "Reproduce a safe mount/configuration error; inspect Pod events and fix it."
+        },
+        {
+          "key": "K8S-07.5",
+          "title": "K8S-07.5 \u2014 Access Modes and Scheduling",
+          "objective": "Compare RWO, ROX and RWX; test volume/node placement constraints."
+        },
+        {
+          "key": "K8S-07.6",
+          "title": "K8S-07.6 \u2014 StatefulSets and Persistent Data",
+          "objective": "Deploy a small stateful workload; test Pod recreation and persistence."
+        },
+        {
+          "key": "K8S-07.7",
+          "title": "K8S-07.7 \u2014 Storage Capacity and Recovery",
+          "objective": "Inspect storage usage and simulate bounded full-volume conditions safely."
+        },
+        {
+          "key": "K8S-07.8",
+          "title": "K8S-07.8 \u2014 Storage Incident Simulation",
+          "objective": "Troubleshoot a broken volume or PVC and document recovery steps."
+        }
+      ]
+    },
+    {
+      "key": "K8S-08",
+      "title": "K8S-08 \u2014 Cluster Maintenance & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in cluster maintenance & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-08.1",
+          "title": "K8S-08.1 \u2014 Node Conditions and Maintenance Readiness",
+          "objective": "Inspect node conditions, capacity and running workloads before maintenance."
+        },
+        {
+          "key": "K8S-08.2",
+          "title": "K8S-08.2 \u2014 Cordon and Uncordon",
+          "objective": "Practice preventing new scheduling and restoring node scheduling."
+        },
+        {
+          "key": "K8S-08.3",
+          "title": "K8S-08.3 \u2014 Drain and Eviction",
+          "objective": "Drain a disposable worker node with appropriate workload protections."
+        },
+        {
+          "key": "K8S-08.4",
+          "title": "K8S-08.4 \u2014 PodDisruptionBudget During Maintenance",
+          "objective": "Diagnose blocked evictions and evaluate safe maintenance options."
+        },
+        {
+          "key": "K8S-08.5",
+          "title": "K8S-08.5 \u2014 Node Replacement in kind",
+          "objective": "Replace a disposable worker node and observe rescheduling."
+        },
+        {
+          "key": "K8S-08.6",
+          "title": "K8S-08.6 \u2014 DaemonSets and Static Pods",
+          "objective": "Explain their behavior during node maintenance; inspect examples."
+        },
+        {
+          "key": "K8S-08.7",
+          "title": "K8S-08.7 \u2014 Maintenance Validation Checklist",
+          "objective": "Verify workloads, networking, storage and node health after changes."
+        },
+        {
+          "key": "K8S-08.8",
+          "title": "K8S-08.8 \u2014 Maintenance Incident Simulation",
+          "objective": "Simulate an interrupted drain or unavailable node; write a recovery runbook."
+        }
+      ]
+    },
+    {
+      "key": "K8S-09",
+      "title": "K8S-09 \u2014 Kubernetes Upgrades & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in kubernetes upgrades & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-09.1",
+          "title": "K8S-09.1 \u2014 Version Skew and Upgrade Planning",
+          "objective": "Review supported component version skew and identify upgrade prerequisites."
+        },
+        {
+          "key": "K8S-09.2",
+          "title": "K8S-09.2 \u2014 API Deprecation Audit",
+          "objective": "Identify deprecated APIs in manifests and plan replacements."
+        },
+        {
+          "key": "K8S-09.3",
+          "title": "K8S-09.3 \u2014 Backup and Rollback Preparation",
+          "objective": "Document etcd/control plane and workload recovery considerations; snapshot only when supported."
+        },
+        {
+          "key": "K8S-09.4",
+          "title": "K8S-09.4 \u2014 Disposable Cluster Upgrade Strategy",
+          "objective": "Plan a safe kind cluster replacement or supported node upgrade test."
+        },
+        {
+          "key": "K8S-09.5",
+          "title": "K8S-09.5 \u2014 Node Upgrade and Drain Workflow",
+          "objective": "Practice worker replacement with cordon/drain and PDB checks."
+        },
+        {
+          "key": "K8S-09.6",
+          "title": "K8S-09.6 \u2014 Workload Compatibility Testing",
+          "objective": "Test probes, ingress, storage and manifests against a newer Kubernetes version."
+        },
+        {
+          "key": "K8S-09.7",
+          "title": "K8S-09.7 \u2014 Upgrade Failure Investigation",
+          "objective": "Diagnose an intentionally incompatible manifest or configuration."
+        },
+        {
+          "key": "K8S-09.8",
+          "title": "K8S-09.8 \u2014 Upgrade Runbook and Post-Checks",
+          "objective": "Write preflight, validation, recovery and post-upgrade procedures."
+        }
+      ]
+    },
+    {
+      "key": "K8S-10",
+      "title": "K8S-10 \u2014 Deployment Strategies & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in deployment strategies & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-10.1",
+          "title": "K8S-10.1 \u2014 Rolling Updates",
+          "objective": "Configure Deployment rollingUpdate maxSurge and maxUnavailable."
+        },
+        {
+          "key": "K8S-10.2",
+          "title": "K8S-10.2 \u2014 Rollout Status and History",
+          "objective": "Inspect revisions, rollout status and events."
+        },
+        {
+          "key": "K8S-10.3",
+          "title": "K8S-10.3 \u2014 Rollbacks and Recovery",
+          "objective": "Deploy a broken image or config and perform a verified rollback."
+        },
+        {
+          "key": "K8S-10.4",
+          "title": "K8S-10.4 \u2014 Readiness and Zero-Downtime",
+          "objective": "Test readiness, terminationGracePeriodSeconds and traffic continuity."
+        },
+        {
+          "key": "K8S-10.5",
+          "title": "K8S-10.5 \u2014 Recreate vs Rolling Update",
+          "objective": "Compare deployment strategies and expected downtime."
+        },
+        {
+          "key": "K8S-10.6",
+          "title": "K8S-10.6 \u2014 Canary Deployment Fundamentals",
+          "objective": "Implement a lightweight canary using separate Deployments and traffic selection."
+        },
+        {
+          "key": "K8S-10.7",
+          "title": "K8S-10.7 \u2014 Deployment Failure Troubleshooting",
+          "objective": "Diagnose image pull, readiness and rollout timeout failures."
+        },
+        {
+          "key": "K8S-10.8",
+          "title": "K8S-10.8 \u2014 Release Incident Simulation",
+          "objective": "Reproduce a failed release and document detection, rollback and prevention."
+        }
+      ]
+    },
+    {
+      "key": "K8S-11",
+      "title": "K8S-11 \u2014 Security & RBAC Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in security & rbac troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-11.1",
+          "title": "K8S-11.1 \u2014 RBAC Roles and Bindings",
+          "objective": "Create least-privilege Roles and RoleBindings; test permissions."
+        },
+        {
+          "key": "K8S-11.2",
+          "title": "K8S-11.2 \u2014 ServiceAccounts and Workload Identity Basics",
+          "objective": "Inspect service account tokens and configure scoped workload access."
+        },
+        {
+          "key": "K8S-11.3",
+          "title": "K8S-11.3 \u2014 Forbidden Error Troubleshooting",
+          "objective": "Reproduce a denied API operation and diagnose with kubectl auth can-i."
+        },
+        {
+          "key": "K8S-11.4",
+          "title": "K8S-11.4 \u2014 Pod Security Standards",
+          "objective": "Apply namespace Pod Security Admission labels and diagnose rejected Pods."
+        },
+        {
+          "key": "K8S-11.5",
+          "title": "K8S-11.5 \u2014 Security Contexts",
+          "objective": "Configure non-root containers, capabilities and read-only root filesystems."
+        },
+        {
+          "key": "K8S-11.6",
+          "title": "K8S-11.6 \u2014 Secrets and Configuration Safety",
+          "objective": "Handle Kubernetes Secrets without committing real credentials or leaking values in logs."
+        },
+        {
+          "key": "K8S-11.7",
+          "title": "K8S-11.7 \u2014 Network Security Controls",
+          "objective": "Apply supported NetworkPolicies and validate allowed/blocked paths."
+        },
+        {
+          "key": "K8S-11.8",
+          "title": "K8S-11.8 \u2014 Security Incident Simulation",
+          "objective": "Investigate a failed admission or RBAC configuration; document remediation."
+        }
+      ]
+    },
+    {
+      "key": "K8S-12",
+      "title": "K8S-12 \u2014 Observability & Troubleshooting",
+      "objective": "Build hands-on Kubernetes production operations skills in observability & troubleshooting, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-12.1",
+          "title": "K8S-12.1 \u2014 Cluster Metrics Fundamentals",
+          "objective": "Inspect metrics-server and kubectl top; understand limits of resource metrics."
+        },
+        {
+          "key": "K8S-12.2",
+          "title": "K8S-12.2 \u2014 Prometheus Monitoring",
+          "objective": "Deploy lightweight monitoring when resources allow; inspect targets and metrics."
+        },
+        {
+          "key": "K8S-12.3",
+          "title": "K8S-12.3 \u2014 Grafana Dashboards",
+          "objective": "Create a minimal workload and node health dashboard."
+        },
+        {
+          "key": "K8S-12.4",
+          "title": "K8S-12.4 \u2014 Application and Kubernetes Logs",
+          "objective": "Collect and correlate application, Pod and event information."
+        },
+        {
+          "key": "K8S-12.5",
+          "title": "K8S-12.5 \u2014 Alerting Rules",
+          "objective": "Define practical alerts for restarts, unavailable replicas and resource pressure."
+        },
+        {
+          "key": "K8S-12.6",
+          "title": "K8S-12.6 \u2014 Troubleshoot Missing Metrics",
+          "objective": "Investigate unavailable metrics and failed scrape targets."
+        },
+        {
+          "key": "K8S-12.7",
+          "title": "K8S-12.7 \u2014 SLO and Error Budget Basics",
+          "objective": "Define a simple availability SLI/SLO and measurement method."
+        },
+        {
+          "key": "K8S-12.8",
+          "title": "K8S-12.8 \u2014 Observability Incident Simulation",
+          "objective": "Detect an injected failure with metrics/logs and write a timeline."
+        }
+      ]
+    },
+    {
+      "key": "K8S-13",
+      "title": "K8S-13 \u2014 Production Incident Simulations",
+      "objective": "Build hands-on Kubernetes production operations skills in production incident simulations, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-13.1",
+          "title": "K8S-13.1 \u2014 CrashLoopBackOff Incident",
+          "objective": "Diagnose a restarting workload without reading the answer first."
+        },
+        {
+          "key": "K8S-13.2",
+          "title": "K8S-13.2 \u2014 ImagePullBackOff Incident",
+          "objective": "Troubleshoot image name, tag and pull credential issues using fake credentials."
+        },
+        {
+          "key": "K8S-13.3",
+          "title": "K8S-13.3 \u2014 Pending Pod Incident",
+          "objective": "Diagnose scheduling failures from events and node capacity."
+        },
+        {
+          "key": "K8S-13.4",
+          "title": "K8S-13.4 \u2014 OOMKilled Incident",
+          "objective": "Investigate memory limits and application behavior; verify remediation."
+        },
+        {
+          "key": "K8S-13.5",
+          "title": "K8S-13.5 \u2014 Service Connectivity Incident",
+          "objective": "Find a selector, port or endpoint mismatch."
+        },
+        {
+          "key": "K8S-13.6",
+          "title": "K8S-13.6 \u2014 DNS Failure Incident",
+          "objective": "Diagnose broken service discovery and CoreDNS symptoms."
+        },
+        {
+          "key": "K8S-13.7",
+          "title": "K8S-13.7 \u2014 Node Failure Incident",
+          "objective": "Simulate a disposable worker outage and observe recovery."
+        },
+        {
+          "key": "K8S-13.8",
+          "title": "K8S-13.8 \u2014 Multi-Symptom Production Outage",
+          "objective": "Combine faults; triage, mitigate, recover, write an RCA and interview summary."
+        }
+      ]
+    },
+    {
+      "key": "K8S-14",
+      "title": "K8S-14 \u2014 Backup, Restore & Disaster Recovery",
+      "objective": "Build hands-on Kubernetes production operations skills in backup, restore & disaster recovery, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-14.1",
+          "title": "K8S-14.1 \u2014 Recovery Objectives and Data Inventory",
+          "objective": "Define RPO/RTO and identify what must be backed up."
+        },
+        {
+          "key": "K8S-14.2",
+          "title": "K8S-14.2 \u2014 Kubernetes Manifest Backup",
+          "objective": "Export and version sanitized declarative workload configuration."
+        },
+        {
+          "key": "K8S-14.3",
+          "title": "K8S-14.3 \u2014 Persistent Data Backup",
+          "objective": "Back up sample application data from a local volume."
+        },
+        {
+          "key": "K8S-14.4",
+          "title": "K8S-14.4 \u2014 Application Restore Exercise",
+          "objective": "Restore manifests and data into a clean namespace or disposable cluster."
+        },
+        {
+          "key": "K8S-14.5",
+          "title": "K8S-14.5 \u2014 Stateful Workload Recovery",
+          "objective": "Test StatefulSet data recovery and verify application consistency."
+        },
+        {
+          "key": "K8S-14.6",
+          "title": "K8S-14.6 \u2014 Cluster Recovery Planning",
+          "objective": "Document managed-cloud vs kind control plane recovery boundaries."
+        },
+        {
+          "key": "K8S-14.7",
+          "title": "K8S-14.7 \u2014 Backup Verification and Security",
+          "objective": "Check backup integrity and avoid committing sensitive data."
+        },
+        {
+          "key": "K8S-14.8",
+          "title": "K8S-14.8 \u2014 Disaster Recovery Simulation",
+          "objective": "Recreate a lost workload from backups and record actual recovery time."
+        }
+      ]
+    },
+    {
+      "key": "K8S-15",
+      "title": "K8S-15 \u2014 Operational Runbooks & Documentation",
+      "objective": "Build hands-on Kubernetes production operations skills in operational runbooks & documentation, including controlled failures, diagnosis, verification, and documentation.",
+      "tasks": [
+        {
+          "key": "K8S-15.1",
+          "title": "K8S-15.1 \u2014 Cluster Health Runbook",
+          "objective": "Document daily cluster health commands and expected results."
+        },
+        {
+          "key": "K8S-15.2",
+          "title": "K8S-15.2 \u2014 Pod Failure Runbook",
+          "objective": "Write symptom-to-command flow for CrashLoopBackOff and image failures."
+        },
+        {
+          "key": "K8S-15.3",
+          "title": "K8S-15.3 \u2014 Scheduling and Resource Runbook",
+          "objective": "Document Pending, OOMKilled, throttling and node pressure triage."
+        },
+        {
+          "key": "K8S-15.4",
+          "title": "K8S-15.4 \u2014 Networking and DNS Runbook",
+          "objective": "Document Service, Ingress, EndpointSlice and DNS troubleshooting."
+        },
+        {
+          "key": "K8S-15.5",
+          "title": "K8S-15.5 \u2014 Storage Recovery Runbook",
+          "objective": "Document PVC binding, mount failures and data recovery."
+        },
+        {
+          "key": "K8S-15.6",
+          "title": "K8S-15.6 \u2014 Maintenance and Upgrade Runbook",
+          "objective": "Record drain, PDB, upgrades, validation and rollback procedures."
+        },
+        {
+          "key": "K8S-15.7",
+          "title": "K8S-15.7 \u2014 Incident Report Templates",
+          "objective": "Create incident timeline, impact, RCA and action-item templates."
+        },
+        {
+          "key": "K8S-15.8",
+          "title": "K8S-15.8 \u2014 Portfolio Documentation and Interview Notes",
+          "objective": "Publish sanitized diagrams, lab results and short speakable incident summaries."
+        }
+      ]
+    }
+  ]
+}

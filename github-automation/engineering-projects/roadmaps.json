@@ -1,0 +1,478 @@
+[
+  {
+    "repo": "cicd-gitops-automation",
+    "roadmap": 4,
+    "description": "Build and troubleshoot delivery pipelines and GitOps workflows.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "CICD-01",
+        "title": "CICD-01 \u2014 Git and Pipeline Fundamentals",
+        "objective": "Build and validate git and pipeline fundamentals capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Design repository branching and pull request checks",
+          "Build a GitHub Actions validation workflow",
+          "Configure reusable workflow inputs and outputs",
+          "Manage workflow permissions and secrets",
+          "Troubleshoot failed jobs and artifact retention"
+        ]
+      },
+      {
+        "key": "CICD-02",
+        "title": "CICD-02 \u2014 Container Build and Registries",
+        "objective": "Build and validate container build and registries capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Build a reproducible multi-stage Docker image",
+          "Add image vulnerability scanning",
+          "Publish images to a container registry",
+          "Use immutable tags and image digests",
+          "Diagnose failed registry authentication and image pulls"
+        ]
+      },
+      {
+        "key": "CICD-03",
+        "title": "CICD-03 \u2014 Infrastructure CI and Terraform",
+        "objective": "Build and validate infrastructure ci and terraform capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Run terraform fmt validate and plan in CI",
+          "Use remote state and safe plan review",
+          "Add policy and security checks",
+          "Require approvals before infrastructure apply",
+          "Diagnose state locks and failed pipeline plans"
+        ]
+      },
+      {
+        "key": "CICD-04",
+        "title": "CICD-04 \u2014 Argo CD and GitOps",
+        "objective": "Build and validate argo cd and gitops capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Bootstrap Argo CD in a lab cluster",
+          "Deploy an application from Git manifests",
+          "Configure automated sync and health checks",
+          "Troubleshoot OutOfSync and drift",
+          "Practice rollback and controlled promotion"
+        ]
+      },
+      {
+        "key": "CICD-05",
+        "title": "CICD-05 \u2014 Release Strategies and Operations",
+        "objective": "Build and validate release strategies and operations capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Implement staging and production promotion",
+          "Practice rolling and canary deployments",
+          "Define rollback criteria and release checks",
+          "Monitor delivery metrics and failed releases",
+          "Write a CI/CD incident runbook"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "gpu-ai-infrastructure",
+    "roadmap": 5,
+    "description": "Operate GPU workloads and capacity in Kubernetes and cloud labs.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "GPU-01",
+        "title": "GPU-01 \u2014 GPU Architecture and Scheduling",
+        "objective": "Build and validate gpu architecture and scheduling capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Understand GPU devices drivers and CUDA compatibility",
+          "Inspect Kubernetes device plugins and GPU resources",
+          "Explain GPU requests and scheduling constraints",
+          "Troubleshoot Pending GPU Pods using example events",
+          "Document GPU cost and capacity planning"
+        ]
+      },
+      {
+        "key": "GPU-02",
+        "title": "GPU-02 \u2014 GPU Node Provisioning",
+        "objective": "Build and validate gpu node provisioning capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Design a GPU node pool with labels and taints",
+          "Validate drivers and device plugin readiness",
+          "Configure node selectors tolerations and affinity",
+          "Investigate GPU node NotReady scenarios",
+          "Create a teardown and cost checklist"
+        ]
+      },
+      {
+        "key": "GPU-03",
+        "title": "GPU-03 \u2014 AI Workload Deployment",
+        "objective": "Build and validate ai workload deployment capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Package a small inference application",
+          "Define resource requests and model storage",
+          "Deploy a GPU workload when capacity is available",
+          "Practice CPU-only simulation when GPU access is unavailable",
+          "Validate readiness latency and basic throughput"
+        ]
+      },
+      {
+        "key": "GPU-04",
+        "title": "GPU-04 \u2014 GPU Observability",
+        "objective": "Build and validate gpu observability capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Collect GPU utilization and memory metrics",
+          "Build dashboards for GPU capacity",
+          "Configure alerts for stuck workloads",
+          "Diagnose GPU memory pressure and errors",
+          "Document workload performance baselines"
+        ]
+      },
+      {
+        "key": "GPU-05",
+        "title": "GPU-05 \u2014 GPU Reliability and Incidents",
+        "objective": "Build and validate gpu reliability and incidents capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Simulate insufficient nvidia.com/gpu events",
+          "Investigate stalled or unresponsive GPU jobs",
+          "Practice safe node replacement procedures",
+          "Write an incident timeline and root cause analysis",
+          "Document scaling and cost tradeoffs"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "mlops-platform",
+    "roadmap": 6,
+    "description": "Build a reproducible model lifecycle platform with operational controls.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "MLOPS-01",
+        "title": "MLOPS-01 \u2014 MLOps Architecture",
+        "objective": "Build and validate mlops architecture capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Design training and inference components",
+          "Define model artifact versioning",
+          "Select experiment tracking approach",
+          "Document dataset and model lineage",
+          "Create a cost-aware local-first architecture"
+        ]
+      },
+      {
+        "key": "MLOPS-02",
+        "title": "MLOPS-02 \u2014 Training Pipelines",
+        "objective": "Build and validate training pipelines capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Build a small reproducible training job",
+          "Parameterize datasets and hyperparameters",
+          "Capture experiment metrics and artifacts",
+          "Validate training pipeline failure handling",
+          "Document reproducibility controls"
+        ]
+      },
+      {
+        "key": "MLOPS-03",
+        "title": "MLOPS-03 \u2014 Model Registry and Delivery",
+        "objective": "Build and validate model registry and delivery capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Register and version a model artifact",
+          "Build a containerized inference API",
+          "Create a model promotion workflow",
+          "Test model rollback",
+          "Verify model artifact integrity"
+        ]
+      },
+      {
+        "key": "MLOPS-04",
+        "title": "MLOPS-04 \u2014 Monitoring and Quality",
+        "objective": "Build and validate monitoring and quality capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Measure inference latency and errors",
+          "Track model input and output quality",
+          "Define drift detection using synthetic data",
+          "Configure operational alerts",
+          "Document monitoring response procedures"
+        ]
+      },
+      {
+        "key": "MLOPS-05",
+        "title": "MLOPS-05 \u2014 MLOps Security and Reliability",
+        "objective": "Build and validate mlops security and reliability capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Use least-privilege service identities",
+          "Manage secrets and artifact permissions",
+          "Simulate failed model deployments",
+          "Create backup and recovery procedures",
+          "Write MLOps incident runbooks"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "llm-inference-rag",
+    "roadmap": 7,
+    "description": "Build and operate a small retrieval-augmented generation system.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "RAG-01",
+        "title": "RAG-01 \u2014 LLM and RAG Fundamentals",
+        "objective": "Build and validate llm and rag fundamentals capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Diagram retrieval and generation components",
+          "Compare local and hosted model options",
+          "Define evaluation dataset with synthetic content",
+          "Measure baseline latency and token usage",
+          "Document security and privacy boundaries"
+        ]
+      },
+      {
+        "key": "RAG-02",
+        "title": "RAG-02 \u2014 Document Ingestion",
+        "objective": "Build and validate document ingestion capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Create a synthetic document collection",
+          "Implement parsing and chunking",
+          "Generate embeddings with a supported model",
+          "Store and update vector records",
+          "Test ingestion errors and retries"
+        ]
+      },
+      {
+        "key": "RAG-03",
+        "title": "RAG-03 \u2014 Retrieval and API",
+        "objective": "Build and validate retrieval and api capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Implement similarity search",
+          "Add metadata filtering",
+          "Build a FastAPI retrieval endpoint",
+          "Add citations and source attribution",
+          "Test missing and irrelevant retrieval results"
+        ]
+      },
+      {
+        "key": "RAG-04",
+        "title": "RAG-04 \u2014 Inference Operations",
+        "objective": "Build and validate inference operations capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Integrate a model inference endpoint",
+          "Add timeouts retries and rate limits",
+          "Cache safe repeatable requests",
+          "Measure latency and resource usage",
+          "Test service degradation and fallback"
+        ]
+      },
+      {
+        "key": "RAG-05",
+        "title": "RAG-05 \u2014 RAG Evaluation and Security",
+        "objective": "Build and validate rag evaluation and security capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Evaluate retrieval relevance and answer quality",
+          "Test prompt injection resistance",
+          "Prevent secret and private data exposure",
+          "Add monitoring and incident alerts",
+          "Document limitations and operational runbooks"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "self-service-it-platform",
+    "roadmap": 8,
+    "description": "Build a secure self-service platform for routine IT workflows.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "IT-01",
+        "title": "IT-01 \u2014 Platform Design",
+        "objective": "Build and validate platform design capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Identify a safe synthetic onboarding workflow",
+          "Define API contracts and data model",
+          "Design role-based access control",
+          "Document approval and audit requirements",
+          "Create a local development environment"
+        ]
+      },
+      {
+        "key": "IT-02",
+        "title": "IT-02 \u2014 Backend Automation",
+        "objective": "Build and validate backend automation capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Build a FastAPI service",
+          "Validate request schemas and errors",
+          "Implement idempotent bulk onboarding",
+          "Add asynchronous job processing",
+          "Test duplicate and partial failure handling"
+        ]
+      },
+      {
+        "key": "IT-03",
+        "title": "IT-03 \u2014 Identity and Approvals",
+        "objective": "Build and validate identity and approvals capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Implement demo user roles",
+          "Add approval state transitions",
+          "Audit privileged operations",
+          "Protect secrets and API credentials",
+          "Test unauthorized requests"
+        ]
+      },
+      {
+        "key": "IT-04",
+        "title": "IT-04 \u2014 Deployment and Operations",
+        "objective": "Build and validate deployment and operations capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Containerize the application",
+          "Create a CI validation pipeline",
+          "Deploy to a local Kubernetes lab",
+          "Add health checks and monitoring",
+          "Document recovery and rollback"
+        ]
+      },
+      {
+        "key": "IT-05",
+        "title": "IT-05 \u2014 User Experience and Runbooks",
+        "objective": "Build and validate user experience and runbooks capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Create a simple request form",
+          "Display request status and history",
+          "Add input validation and accessibility checks",
+          "Write operator and user runbooks",
+          "Run an end-to-end synthetic onboarding demo"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "jira-github-integration",
+    "roadmap": 9,
+    "description": "Build issue-to-code traceability and safe synchronization workflows.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "JG-01",
+        "title": "JG-01 \u2014 Integration Architecture",
+        "objective": "Build and validate integration architecture capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Diagram Jira and GitHub data flow",
+          "Define synthetic issue and pull request mappings",
+          "Compare webhooks and scheduled sync",
+          "Design idempotency and retry strategy",
+          "Document permissions and rate limits"
+        ]
+      },
+      {
+        "key": "JG-02",
+        "title": "JG-02 \u2014 GitHub Event Collection",
+        "objective": "Build and validate github event collection capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Build a webhook receiver for demo events",
+          "Verify webhook signatures",
+          "Parse pull request and commit references",
+          "Persist events without duplicates",
+          "Test malformed and repeated deliveries"
+        ]
+      },
+      {
+        "key": "JG-03",
+        "title": "JG-03 \u2014 Jira API Integration",
+        "objective": "Build and validate jira api integration capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Create a safe Jira API client abstraction",
+          "Use mock or sandbox Jira data",
+          "Map projects issues and statuses",
+          "Handle pagination and rate limits",
+          "Test authorization and network failures"
+        ]
+      },
+      {
+        "key": "JG-04",
+        "title": "JG-04 \u2014 Traceability Reports",
+        "objective": "Build and validate traceability reports capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Link Jira keys to pull requests",
+          "Generate coverage and orphaned-work reports",
+          "Reconcile mismatched records",
+          "Build a small dashboard or report",
+          "Validate report accuracy with fixtures"
+        ]
+      },
+      {
+        "key": "JG-05",
+        "title": "JG-05 \u2014 Reliability and Security",
+        "objective": "Build and validate reliability and security capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Implement retries backoff and dead-letter handling",
+          "Mask tokens and sensitive fields in logs",
+          "Monitor integration failures and lag",
+          "Create incident recovery runbooks",
+          "Document architecture and demo results"
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "security-observability-reliability",
+    "roadmap": 10,
+    "description": "Practice secure operations, monitoring, and incident response.",
+    "visibility": "public",
+    "phases": [
+      {
+        "key": "SOR-01",
+        "title": "SOR-01 \u2014 Observability Foundations",
+        "objective": "Build and validate observability foundations capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Define SLIs SLOs and error budgets",
+          "Instrument a sample application with metrics",
+          "Collect structured logs and traces",
+          "Build a service health dashboard",
+          "Document telemetry retention and costs"
+        ]
+      },
+      {
+        "key": "SOR-02",
+        "title": "SOR-02 \u2014 Prometheus and Grafana",
+        "objective": "Build and validate prometheus and grafana capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Deploy monitoring to a disposable cluster",
+          "Configure application scrape targets",
+          "Create alerting rules and dashboards",
+          "Troubleshoot missing metrics and targets",
+          "Test alert routing with safe notifications"
+        ]
+      },
+      {
+        "key": "SOR-03",
+        "title": "SOR-03 \u2014 Cloud and Kubernetes Security",
+        "objective": "Build and validate cloud and kubernetes security capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Audit IAM and RBAC permissions",
+          "Scan container images and IaC",
+          "Apply workload security contexts",
+          "Test NetworkPolicy restrictions",
+          "Document secrets management and rotation"
+        ]
+      },
+      {
+        "key": "SOR-04",
+        "title": "SOR-04 \u2014 Reliability Engineering",
+        "objective": "Build and validate reliability engineering capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Perform controlled failure experiments",
+          "Define recovery objectives and runbooks",
+          "Test backup and restore procedures",
+          "Practice rollout rollback and capacity planning",
+          "Measure availability during maintenance"
+        ]
+      },
+      {
+        "key": "SOR-05",
+        "title": "SOR-05 \u2014 Incident Response and Review",
+        "objective": "Build and validate incident response and review capabilities through reproducible hands-on exercises.",
+        "tasks": [
+          "Simulate an application outage",
+          "Triage alerts logs metrics and traces",
+          "Create incident timeline and root cause analysis",
+          "Define corrective and preventive actions",
+          "Publish sanitized postmortem and interview summary"
+        ]
+      }
+    ]
+  }
+]
